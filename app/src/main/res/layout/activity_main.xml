@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.activity.MainActivity">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="@string/app_name"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edUsuario"
+            android:layout_width="258dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/name"
+            app:layout_constraintEnd_toEndOf="@+id/tvTitulo"
+            app:layout_constraintStart_toStartOf="@+id/tvTitulo"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/edSenha"
+            android:layout_width="258dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="80dp"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:hint="@string/password"
+            app:layout_constraintEnd_toEndOf="@+id/edUsuario"
+            app:layout_constraintStart_toStartOf="@+id/edUsuario"
+            app:layout_constraintTop_toBottomOf="@+id/edUsuario"
+            android:autofillHints="" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:text="@string/remember"
+            app:layout_constraintStart_toStartOf="@+id/edSenha"
+            app:layout_constraintTop_toBottomOf="@+id/edSenha" />
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="217dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="@+id/edSenha"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/edSenha"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

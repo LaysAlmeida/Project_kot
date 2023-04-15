@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" translatable="false">ProjetoR</string>
+    <string name="name" translatable="false">Name</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="remember" translatable="false">Remember</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="textoExemplo" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. </string>
+    <string name="msgError" translatable="false">User error</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="nome" translatable="false">Nome</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProjetoR</string>
+    <string name="name">Nome</string>
+    <string name="password">Senha</string>
+    <string name="remember">Lembre-me</string>
+    <string name="login">Entrar</string>
+    <string name="textoExemplo">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. "</string>
+    <string name="msgError">Erro no Usuário</string>
+    <string name="todo">TODO</string>
+    <string name="nome">Nome</string>
+</resources>

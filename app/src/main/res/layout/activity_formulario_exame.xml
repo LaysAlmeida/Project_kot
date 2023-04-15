@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.activity.FormularioExameActivity">
+
+        <EditText
+            android:id="@+id/activity_formulario_exame_nome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Paciente"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/activity_formulario_exame_descricao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Descrição"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@id/activity_formulario_exame_nome"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_exame_nome"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_exame_nome"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/activity_formulario_exame_horario"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Horario"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@id/activity_formulario_exame_descricao"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_exame_descricao"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_exame_descricao"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/activity_formulario_exame_solicitante"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Solicitante"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@id/activity_formulario_exame_horario"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_exame_horario"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_exame_horario"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/activity_formulario_exame_valor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Valor"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@id/activity_formulario_exame_solicitante"
+            app:layout_constraintStart_toStartOf="@id/activity_formulario_exame_solicitante"
+            app:layout_constraintTop_toBottomOf="@id/activity_formulario_exame_solicitante"
+            android:autofillHints="" />
+
+        <Button android:id="@+id/activity_formulario_exame_botao_salvar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Salvar"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_formulario_exame_valor" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
